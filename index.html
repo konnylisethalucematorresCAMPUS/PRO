@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Tarea</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+
+  <form action="">
+
+    <!-- Nombre -->
+    <div>
+      <div><label for="nombre">Nombre</label></div>
+      <div><input type="text" id="nombre" name="nombre" pattern="[A-Za-z]+" title="Solo letras mayúsculas y minúsculas" required></div>
+    </div>
+    <hr>
+
+    <!-- Apellido -->
+    <div>
+      <div><label for="apellido">Apellido</label></div>
+      <div><input type="text" id="apellido" name="apellido" pattern="[a-z]+" title="Solo letras minúsculas" required></div>
+    </div>
+    <hr>
+
+    <!-- Color Favorito del usuario-->
+    <div>
+      <div><label for="color">Color</label></div>
+      <div><input type="color" id="color" name="color" required></div>
+    </div>
+    <hr>
+
+    <!-- Edad -->
+    <div>
+      <div><label for="edad">Edad</label></div>
+      <div><input type="number" id="edad" name="edad" min="1" required></div>
+    </div>
+    <hr>
+
+    <!-- Números (input text, solo números) -->
+    <div>
+      <div><label for="numeros">Números</label></div>
+      <div><input type="text" id="numeros" name="numeros" pattern="\d+" title="Solo números" required></div>
+    </div>
+    <hr>
+
+    <!-- Números positivos -->
+    <div>
+      <div><label for="positivos">Positivos</label></div>
+      <div><input type="number" id="positivos" name="positivos" min="1" required></div>
+    </div>
+    <hr>
+
+    <!-- Rango de incremento/decremento -->
+    <div>
+      <div><label for="rango">Incremento</label></div>
+      <div><input type="number" id="rango" name="rango" step="0.5" min="10" max="20" value="15" required></div>
+    </div>
+    <hr>
+
+    <!-- Fecha de nacimiento -->
+    <div>
+      <div><label for="fecha_nacimiento">Fecha de Nacimiento</label></div>
+      <div><input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required></div>
+    </div>
+    <hr>
+
+    <!-- Hora de registro -->
+    <div>
+      <div><label for="hora_registro">Hora de Registro</label></div>
+      <div><input type="time" id="hora_registro" name="hora_registro" required></div>
+    </div>
+    <hr>
+
+    <!-- Ciudad -->
+    <div>
+      <div><label for="ciudad">Ciudad</label></div>
+      <div>
+        <select id="ciudad" name="ciudad" required>
+          <option value="ciudad1">Ciudad 1</option>
+          <option value="ciudad2">Ciudad 2</option>
+          <option value="ciudad3">Ciudad 3</option>
+        </select>
+      </div>
+    </div>
+    <hr>
+
+    <!-- Género -->
+    <div>
+      <div><b>Género</b></div>
+      <div>
+        <label><input type="radio" name="genero" value="masculino" required> Masculino</label>
+        <label><input type="radio" name="genero" value="femenino"> Femenino</label>
+        <label><input type="radio" name="genero" value="otro"> Otro</label>
+      </div>
+    </div>
+    <hr>
+
+    <!-- Materias (opcional) -->
+    <div>
+      <div><label for="materias">Materias</label></div>
+      <div>
+        <select id="materias" name="materias" multiple>
+          <option value="HTML">HTML</option>
+          <option value="CSS">CSS</option>
+          <option value="JS">JavaScript</option>
+          <option value="JAVA">Java</option>
+          <option value="PYTHON">Python</option>
+          <option value="PHP">PHP</option>
+        </select>
+      </div>
+    </div>
+    <hr>
+
+    <!-- Archivos -->
+    <div>
+      <div><label for="archivos">Archivos</label></div>
+      <div><input type="file" id="archivos" name="archivos" accept=".jpg, .png" multiple required></div>
+    </div>
+    <hr>
+
+    <!-- Contraseña -->
+    <div>
+      <div><label for="password">Contraseña</label></div>
+      <div><input type="password" id="password" name="password" required></div>
+    </div>
+    <hr>
+
+    <!-- Nombre del aprendiz (solo lectura) -->
+    <div>
+      <div><label for="aprendiz">Nombre del Aprendiz</label></div>
+      <div><input type="text" id="aprendiz" name="aprendiz" value="KONNY LISETH ALUCEMA TORRES" readonly></div>
+    </div>
+    <hr>
+
+    <!-- Botón de validación -->
+    <div>
+      <button type="submit">Validar formulario</button>
+    </div>
+  </form>
+</body>
+</html>
